@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
-const Coutnry = ({ country }) => {
+const Coutnry = ({ country, handleVisitedCountries }) => {
   const [visited, setVisited] = useState(false);
   // console.log(country);
-
+  // console.log(handleVisitedCountries);
   const handleVisit = () => {
     // system-1
     /* if (visited) {
@@ -14,11 +14,12 @@ const Coutnry = ({ country }) => {
       alert(`${country.name.common} Visited`);
     } */
 
-  //  system-2
+    //  system-2
     setVisited(!visited);
     alert(
       `${country.name.common} ${visited ? "set to Not Visited" : "Visited"}`
     );
+    handleVisitedCountries(country);
   };
 
   return (
