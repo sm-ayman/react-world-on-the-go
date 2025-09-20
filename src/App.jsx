@@ -9,7 +9,6 @@ const countriesPromise = fetch(
 function App() {
   return (
     <>
-      <h1>React World on the go...!</h1>
       <Suspense fallback={<p>Countries Loading...</p>}>
         <Countries countriesPromise={countriesPromise}></Countries>
       </Suspense>
