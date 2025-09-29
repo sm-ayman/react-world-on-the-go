@@ -17,7 +17,7 @@ const Coutnry = ({ country, handleVisitedCountries }) => {
     //  system-2
     setVisited(!visited);
     alert(
-      `${country.name.common} ${visited ? "set to Not Visited" : "Visited"}`
+      `${country.name.common} ${visited ? "Set to Not Visited" : "Visited"}`
     );
     handleVisitedCountries(country);
   };
